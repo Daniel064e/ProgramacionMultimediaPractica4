@@ -43,7 +43,7 @@
             android:layout_width="411dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#673AB7"
-            android:backgroundTint="#673AB7" />
+            android:background="#4CAF50"
+            android:backgroundTint="#8BC34A" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
