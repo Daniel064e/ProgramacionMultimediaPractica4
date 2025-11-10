@@ -46,16 +46,24 @@ public class MainActivity extends AppCompatActivity {
             String correo = tCorreo.getText().toString();
             String contraseña = tContraseña.getText().toString();
 
+            boolean recordar = sRecordar.isChecked();
+
             if (correo.equals("correo@correo.com") && contraseña.equals("123")) {
                 tvMensaje.setText("Usuario y contraseña correctos");
+                tCorreo.setText("");
+                tContraseña.setText("");
                 tvMensaje.setTextColor(Color.GREEN);
+
+                if (recordar) {
+                    tCorreo.setText("correo@correo.com");
+                    tContraseña.setText("");
+                    tvMensaje.setText("Almacenados para siguinte accesos");
+                }
 
             } else {
                 tvMensaje.setText("Usuario y/o contraseña incorrectos");
                 tvMensaje.setTextColor(Color.RED);
             }
-
-
         });
     }
 }
