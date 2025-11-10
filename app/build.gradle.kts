@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.programacinmultimedia4"
+    namespace = "com.example.programacinmultimedia5"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.programacinmultimedia4"
+        applicationId = "com.example.programacinmultimedia5"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

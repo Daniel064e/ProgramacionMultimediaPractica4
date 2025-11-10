@@ -1,4 +1,4 @@
-package com.example.programacinmultimedia4;
+package com.example.programacinmultimedia5;
 
 import org.junit.Test;
 
