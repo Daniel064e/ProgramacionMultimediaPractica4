@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "ProgramaciónMultimedia5"
 include(":app")
+include(":app")
  
