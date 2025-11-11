@@ -2,9 +2,9 @@ package com.example.progrmacinmultimedia5ejercicio2;
 
 public class Juegos {
 
-    private String title;
+    String title;
 
-    private String image;
+    String image;
 
     public Juegos(String title, String image) {
 
