@@ -43,6 +43,7 @@ public class AdaptadorJuegos extends RecyclerView.Adapter<AdaptadorJuegos.Juegos
         public ImageView portadaView;
 
         private Context context;
+        private Juegos[] listaJuegos;
 
         public JuegosViewHolder(View view, Context context) {
             
@@ -67,12 +68,16 @@ public class AdaptadorJuegos extends RecyclerView.Adapter<AdaptadorJuegos.Juegos
 
         @NonNull
         @Override
-
         public JuegosViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int ViewType) {
             View view = layoutInflater.from(parent.getContext())
                     .inflate(R.layout.juegos_item, parent, false);
 
             return new JuegosViewHolder(view, parent.getContext());
+        }
+        
+        @Override
+        public void onBindViewHolder(@NonNull JuegosViewHolder holder, int position) {
+            holder.BindJuego(this.listaJuegos[position]);
         }
 
 
