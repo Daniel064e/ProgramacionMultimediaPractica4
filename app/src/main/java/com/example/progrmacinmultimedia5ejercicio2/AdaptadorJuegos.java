@@ -81,6 +81,12 @@ public class AdaptadorJuegos extends RecyclerView.Adapter<AdaptadorJuegos.Juegos
         }
 
 
-        
+        @Override
+        public int getItemCount() {
+            return this.listaJuegos.length;
+        }
+
+
+
     }
 }
